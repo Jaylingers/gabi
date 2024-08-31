@@ -1,0 +1,106 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header with Navigation Bar */
+.header {
+    background-color: #4CAF50; /* Main color */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+.header ul li {
+    margin-left: 20px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.header ul li a:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Container for layout */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebars and main content */
+.left-sidebar, .right-sidebar {
+    width: 20%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-content {
+    width: 60%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+}
+
+/* Headings styles */
+h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #4CAF50; /* Underline for headings */
+    padding-bottom: 5px; /* Padding below heading */
+    margin-bottom: 15px; /* Margin below heading */
+}
+
+/* Announcement and schedule item styles */
+.schedule-item {
+    background-color: #f1f1f1; /* Light gray background for items */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between items */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.schedule-item:hover {
+    background-color: #e1e1e1; /* Slightly darker gray on hover */
+}
+
+/* Style for strong text */
+.schedule-item strong {
+    color: #4CAF50; /* Green color for strong text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack sidebars and main content on smaller screens */
+    }
+
+    .left-sidebar, .right-sidebar, .main-content {
+        width: 100%; /* Full width for sidebars and main content */
+        margin: 0 0 20px 0; /* Add margin below each section */
+    }
+}
