@@ -19,7 +19,7 @@ $result = $conn->query($sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Files - Secretary Dashboard</title>
     <link rel="stylesheet" href="../../dashboard.css">
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../../assets/css/files/index.css">
      <style>
         /* Add some basic styles for the table */
         table {
@@ -43,7 +43,7 @@ $result = $conn->query($sql);
         </div>
         <nav>
             <ul class="navbar">
-                <li><a href="../../dashboard.php" class="nav-link">Home</a></li>
+                <li><a href="../../home/index.php" class="nav-link">Home</a></li>
                 <li><a href="index.php" class="nav-link">Files</a></li>
                 <li><a href="../../residents/index.php" class="nav-link">Residents</a></li>
                 <li><a href="../../reports/index.php" class="nav-link">Report</a></li>
